@@ -1,9 +1,10 @@
-// import React from 'react'
+import type React from "react";
+import { Navbar } from "./components/layout/navbar"
 
-const App = () => {
+const App: React.FC = () => {
     return (
-        <h1 className='text-3xl font-bold underline'>Hello World</h1>
-    )
+        <Navbar />
+    );
 }
 
-export default App
+export default App;
