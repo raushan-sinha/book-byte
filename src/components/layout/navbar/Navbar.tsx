@@ -1,10 +1,11 @@
 import Logo from "./Logo";
+import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
 import SearchBar from "./SearchBar";
 
 export default function Navbar() {
     return (
-        <nav className="flex flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-4 shadow-md bg-white">
+        <nav className="relative flex flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-4 shadow-md bg-white">
 
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -16,8 +17,13 @@ export default function Navbar() {
                 <SearchBar />
             </div>
 
-            {/* Desktop Navbar */}
+            {/* Desktop Nav */}
             <NavLinks />
+
+            {/* Mobile Menu */}
+            <div className="absolute top-4 right-4 lg:hidden">
+                <MobileMenu />
+            </div>
 
         </nav>
     );
