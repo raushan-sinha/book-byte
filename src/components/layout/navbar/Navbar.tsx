@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import NavLinks from "./NavLinks";
 import SearchBar from "./SearchBar";
 
 export default function Navbar() {
@@ -14,6 +15,9 @@ export default function Navbar() {
             <div className="w-full sm:w-auto sm:flex-1 flex justify-center">
                 <SearchBar />
             </div>
+
+            {/* Desktop Navbar */}
+            <NavLinks />
 
         </nav>
     );
