@@ -8,7 +8,7 @@ export default function Navbar() {
         <nav className="relative flex flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-4 shadow-md bg-white">
 
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
                 <Logo />
             </div>
 
