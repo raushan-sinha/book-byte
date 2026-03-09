@@ -21,6 +21,7 @@ const MobileMenu: React.FC = () => {
             <li key={idx}>
               <Link
                 to={link.path}
+                onClick={() => setOpen(false)}
                 className={`block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition
                       ${
                         location.pathname === link.path
