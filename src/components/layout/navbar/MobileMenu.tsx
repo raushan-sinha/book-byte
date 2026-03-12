@@ -5,11 +5,12 @@ import { MdPrivacyTip } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { TbFileText } from "react-icons/tb";
 import { navLinks } from "./navLinksData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 
 const MobileMenu: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false);
+	const location = useLocation();
 
 	return (
 		<div className="relative lg:hidden flex justify-end">
@@ -62,7 +63,7 @@ const MobileMenu: React.FC = () => {
 											<li key={idx}>
 												<Link
 													to={link.path}
-													className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
+													className={`${location.pathname === link.path ? 'underline underline-offset-4 decoration-2 text-red-600' : ''} flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold`}>
 													<Icon size={20} />
 													{link.name}
 												</Link>
