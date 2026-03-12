@@ -6,6 +6,7 @@ import { FiPhone } from "react-icons/fi";
 import { TbFileText } from "react-icons/tb";
 import { navLinks } from "./navLinksData";
 import { Link } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 const MobileMenu: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -19,10 +20,20 @@ const MobileMenu: React.FC = () => {
 						{/* Sidebar */}
 						<div className="absolute right-0 top-0 h-full w-72 bg-white shadow-xl flex flex-col">
 							{/* Header */}
-							<div className="bg-red-600 text-white p-6">
-								<h2 className="text-lg font-semibold">Welcome to BookByte</h2>
+							<div className="bg-[#5e4ae3] text-white p-6">
+								<div className="flex flex-row items-center justify-between font-semibold text-2xl select-none">
 
-								<p className="text-sm opacity-90 mt-1">
+									<span className="text-black-500">
+										BookByte
+									</span>
+
+									<span>
+										<RxCross2 size={26} strokeWidth={1} onClick={() => setOpen(false)} />
+									</span>
+
+								</div>
+
+								<p className="text-sm text-start opacity-90 mt-1">
 									Login to explore books, save favorites and track reading.
 								</p>
 
@@ -51,8 +62,7 @@ const MobileMenu: React.FC = () => {
 											<li key={idx}>
 												<Link
 													to={link.path}
-													className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold"
-													onClick={() => setOpen(false)}>
+													className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
 													<Icon size={20} />
 													{link.name}
 												</Link>
@@ -101,7 +111,7 @@ const MobileMenu: React.FC = () => {
 						</div>
 					</div>
 				) : (
-					<RiMenu3Fill size={26} />
+					<RiMenu3Fill size={26} strokeWidth={1} />
 				)}
 			</button>
 
