@@ -38,11 +38,11 @@ const MobileMenu: React.FC = () => {
 								</p>
 
 								<div className="flex gap-3 mt-4">
-									<a className="flex-1 text-center bg-white text-red-600 font-medium py-2 rounded-md">
+									<a className="flex-1 text-center bg-[#ff00cc] text-white font-medium py-2 rounded-md cursor-pointer">
 										Login
 									</a>
 
-									<a className="flex-1 text-center border border-white py-2 rounded-md">
+									<a className="flex-1 text-center border border-white py-2 rounded-md cursor-pointer">
 										Sign Up
 									</a>
 								</div>
@@ -74,34 +74,34 @@ const MobileMenu: React.FC = () => {
 
 							{/* Help Section */}
 							<div className="px-5 py-6">
-								<h3 className="text-sm text-start font-bold text-black uppercase mb-4">
+								<h3 className="text-xl text-start font-bold text-black uppercase mb-4">
 									Help
 								</h3>
 
 								<ul className="space-y-3">
 									<li>
-										<a className="flex items-center gap-3 text-gray-700 hover:text-red-600 text-base font-semibold">
+										<a className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
 											<HiOutlineInformationCircle size={20} />
 											About
 										</a>
 									</li>
 
 									<li>
-										<a className="flex items-center gap-3 text-gray-700 hover:text-red-600">
+										<a className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
 											<FiPhone size={20} />
 											Contact
 										</a>
 									</li>
 
 									<li>
-										<a className="flex items-center gap-3 text-gray-700 hover:text-red-600">
+										<a className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
 											<MdPrivacyTip size={20} />
 											Privacy
 										</a>
 									</li>
 
 									<li>
-										<a className="flex items-center gap-3 text-gray-700 hover:text-red-600">
+										<a className="flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold">
 											<TbFileText size={20} />
 											Terms
 										</a>
