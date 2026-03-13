@@ -6,8 +6,6 @@ import { FiPhone } from "react-icons/fi";
 import { TbFileText } from "react-icons/tb";
 import { navLinks } from "./navLinksData";
 import { Link, useLocation } from "react-router-dom";
-import { RxCross2 } from "react-icons/rx";
-
 const MobileMenu: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false);
 	const location = useLocation();
@@ -28,13 +26,9 @@ const MobileMenu: React.FC = () => {
 										BookByte
 									</span>
 
-									<span>
-										<RxCross2 size={26} strokeWidth={1} onClick={() => setOpen(false)} />
-									</span>
-
 								</div>
 
-								<p className="text-sm text-start opacity-90 mt-1">
+								<p className="text-sm text-start opacity-90 mt-1 font-mono">
 									Login to explore books, save favorites and track reading.
 								</p>
 
@@ -51,7 +45,7 @@ const MobileMenu: React.FC = () => {
 
 							{/* Navigation */}
 							<div className="px-5 py-6 border-b">
-								<h3 className="text-xl text-start font-bold text-black uppercase mb-4">
+								<h3 className="text-xl text-start font-bold text-black uppercase mb-4 font-mono">
 									Navigation
 								</h3>
 
@@ -63,7 +57,7 @@ const MobileMenu: React.FC = () => {
 											<li key={idx}>
 												<Link
 													to={link.path}
-													className={`${location.pathname === link.path ? 'underline underline-offset-4 decoration-2 text-red-600' : ''} flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold`}>
+													className={`${location.pathname === link.path ? 'text-red-600 bg-gray-300 p-2 rounded-xl' : ''} flex items-center gap-3 text-gray-800 hover:text-red-600 text-base font-semibold font-mono`}>
 													<Icon size={20} />
 													{link.name}
 												</Link>
