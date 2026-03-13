@@ -18,7 +18,7 @@ const SearchBar: React.FC = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex items-center w-full max-w-xl bg-white border border-black rounded-xl px-4 py-2 shadow-sm focus-within:ring-2 focus-within:ring-blue-500 transition">
+        <form onSubmit={handleSubmit} className="flex items-center w-full max-w-xl bg-white border border-blue-500 rounded-xl px-4 py-2 shadow-sm focus-within:ring-2 focus-within:ring-blue-500 transition">
             <BiSearch className="text-black mr-2" size={25} />
 
             <input
