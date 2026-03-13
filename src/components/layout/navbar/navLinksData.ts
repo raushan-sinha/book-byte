@@ -1,5 +1,5 @@
 import { HiHome, HiOutlineBookOpen, HiOutlineStar } from "react-icons/hi";
-import type { NavLinkItem } from "./types";
+import type { NavLinkItem } from "../../../types/navbarTypes";
 import { BiCategory } from "react-icons/bi";
 
 export const navLinks: NavLinkItem[] = [
