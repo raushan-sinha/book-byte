@@ -8,7 +8,7 @@ const NavLinks = () => {
         <ul className="hidden lg:flex items-center gap-6 list-none">
             {navLinks.map((link, idx) => (
                 <li key={idx}>
-                    <Link to={link.path} className={`font-semibold text-gray-700 transition cursor-pointer font-mono ${location.pathname === link.path ? 'underline underline-offset-4 decoration-2 text-red-600' : ''}`}>
+                    <Link to={link.path} className={`font-semibold text-gray-700 transition cursor-pointer ${location.pathname === link.path ? 'underline underline-offset-4 decoration-2 text-red-600' : ''}`}>
                         {link.name}
                     </Link>
                 </li>
