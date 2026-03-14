@@ -1,11 +1,14 @@
 import CategoryCard from "./components/CategoryCard";
 import SectionHeader from "./components/SectionHeader";
 
+// const categories: string[] = ['Technology', 'Business', 'Self Help', 'Fiction']
+
+
 const Home = () => {
     return (
         <main className="px-6 md:px-12 py-6 space-y-10">
             <header>
-                <SectionHeader title="Browse Categories" />
+                <SectionHeader title="Browse Categories by" />
             </header>
 
             <section>
